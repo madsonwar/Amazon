@@ -1,2 +1,0 @@
-#ifndef SITEDEVENDAS_H
-#define SITEDEVENDAS_H
