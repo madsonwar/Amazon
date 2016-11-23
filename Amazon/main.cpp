@@ -1,7 +1,13 @@
 #include <stdio.h>
-
+#include "SiteDeVendas.h"
+#include <string>
+#include <iostream>
 int main(int argc, char **argv)
 {
-	printf("hello world\n");
-	return 0;
+	SiteDeVendas meuSite;
+    
+    meuSite.mensagemInicial();
+    
+    
+    
 }

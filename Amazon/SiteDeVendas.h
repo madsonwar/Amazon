@@ -1,14 +1,19 @@
 #ifndef SITEDEVENDAS_H
 #define SITEDEVENDAS_H
-#include <iostream>
-#include<string>
+#include <string>
+using std::string;
 class SiteDeVendas
 {
 public:
     SiteDeVendas();
+    SiteDeVendas( string );
     ~SiteDeVendas();
-    void printfNome();
-    void printfEndereco();
+    void mensagemInicial();
+    string getNome();
+    string getEndereco();
+    void setNome( string );
+    void setEndereco( string );
+    
 private:
     string nome;
     string endereco;
