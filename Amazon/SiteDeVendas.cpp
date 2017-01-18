@@ -2,21 +2,25 @@
 #include <string>
 #include <iostream>
 using std::cout;
-static int numeroDeProdutos = 100;
+
+int SiteDeVendas::numeroDeProdutos = 100;
+
 SiteDeVendas::SiteDeVendas()
 {
     this->nome = "Desconhecido";
+    this->endereco = "Desconhecido";
 }
 
-SiteDeVendas::SiteDeVendas( string nomes)
+SiteDeVendas::SiteDeVendas( const string &nomes, const string &ende)
 {
     this->nome = nomes;
+    this->endereco = ende;
 }
 
 SiteDeVendas::SiteDeVendas( const SiteDeVendas &site)
 {
-    nome = site.nome;
-    endereco = site.endereco;
+    this->nome = site.nome;
+    this->endereco = site.endereco;
     
 }
 

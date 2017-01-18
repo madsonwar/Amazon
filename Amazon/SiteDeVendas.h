@@ -6,7 +6,7 @@ class SiteDeVendas
 {
 public:
     SiteDeVendas();
-    SiteDeVendas( string );
+    SiteDeVendas( const string &, const string &);
     SiteDeVendas( const SiteDeVendas & );
     ~SiteDeVendas();
     void mensagemInicial() const;
