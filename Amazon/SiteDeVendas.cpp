@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 using std::cout;
+static int numeroDeProdutos = 100;
 SiteDeVendas::SiteDeVendas()
 {
     this->nome = "Desconhecido";
@@ -10,6 +11,13 @@ SiteDeVendas::SiteDeVendas()
 SiteDeVendas::SiteDeVendas( string nomes)
 {
     this->nome = nomes;
+}
+
+SiteDeVendas::SiteDeVendas( const SiteDeVendas &site)
+{
+    nome = site.nome;
+    endereco = site.endereco;
+    
 }
 
 SiteDeVendas::~SiteDeVendas()
@@ -35,7 +43,7 @@ void SiteDeVendas::setNome(string nomes)
     this->nome = nomes;
 }
 
-void SiteDeVendas::mensagemInicial()
+void SiteDeVendas::mensagemInicial() const
 {
     cout << "Bem Vimdo ao Site de Vendas:"<< nome;
 }

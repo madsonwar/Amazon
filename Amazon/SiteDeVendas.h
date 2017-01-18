@@ -7,8 +7,9 @@ class SiteDeVendas
 public:
     SiteDeVendas();
     SiteDeVendas( string );
+    SiteDeVendas( const SiteDeVendas & );
     ~SiteDeVendas();
-    void mensagemInicial();
+    void mensagemInicial() const;
     string getNome();
     string getEndereco();
     void setNome( string );
@@ -17,6 +18,7 @@ public:
 private:
     string nome;
     string endereco;
+    static int numeroDeprodutos;
     
 };
 
