@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=Amazon
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\celio\Documents\teste"
-ProjectPath            := "C:\Users\celio\Documents\teste\Amazon"
+WorkspacePath          :="C:/Users/FACOMP/Documents/PROGRAMAÇÃO II"
+ProjectPath            :=C:/Users/FACOMP/git/Amazon/Amazon
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=celio
-Date                   :=23/11/2016
-CodeLitePath           :="C:\Program Files\CodeLite"
-LinkerName             :=C:/TDM-GCC-32/bin/g++.exe
-SharedObjectLinkerName :=C:/TDM-GCC-32/bin/g++.exe -shared -fPIC
+User                   :=FACOMP
+Date                   :=01/02/2017
+CodeLitePath           :="C:/Program Files/CodeLite"
+LinkerName             :="C:/Program Files (x86)/CodeBlocks/MinGW/bin/g++.exe"
+SharedObjectLinkerName :="C:/Program Files (x86)/CodeBlocks/MinGW/bin/g++.exe" -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -36,7 +36,7 @@ ObjectsFileList        :="Amazon.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=C:/TDM-GCC-32/bin/windres.exe
+RcCompilerName         :="C:/Program Files (x86)/CodeBlocks/MinGW/bin/windres.exe"
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,13 +49,13 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := C:/TDM-GCC-32/bin/ar.exe rcu
-CXX      := C:/TDM-GCC-32/bin/g++.exe
-CC       := C:/TDM-GCC-32/bin/gcc.exe
+AR       := "C:/Program Files (x86)/CodeBlocks/MinGW/bin/ar.exe" rcu
+CXX      := "C:/Program Files (x86)/CodeBlocks/MinGW/bin/g++.exe"
+CC       := "C:/Program Files (x86)/CodeBlocks/MinGW/bin/gcc.exe"
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := C:/TDM-GCC-32/bin/as.exe
+AS       := "C:/Program Files (x86)/CodeBlocks/MinGW/bin/as.exe"
 
 
 ##
@@ -94,20 +94,20 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/celio/Documents/teste/Amazon/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/FACOMP/git/Amazon/Amazon/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix)main.cpp
 
 $(IntermediateDirectory)/SiteDeVendas.cpp$(ObjectSuffix): SiteDeVendas.cpp $(IntermediateDirectory)/SiteDeVendas.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/celio/Documents/teste/Amazon/SiteDeVendas.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/SiteDeVendas.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/FACOMP/git/Amazon/Amazon/SiteDeVendas.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/SiteDeVendas.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/SiteDeVendas.cpp$(DependSuffix): SiteDeVendas.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/SiteDeVendas.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/SiteDeVendas.cpp$(DependSuffix) -MM "SiteDeVendas.cpp"
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/SiteDeVendas.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/SiteDeVendas.cpp$(DependSuffix) -MM SiteDeVendas.cpp
 
 $(IntermediateDirectory)/SiteDeVendas.cpp$(PreprocessSuffix): SiteDeVendas.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/SiteDeVendas.cpp$(PreprocessSuffix) "SiteDeVendas.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/SiteDeVendas.cpp$(PreprocessSuffix)SiteDeVendas.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

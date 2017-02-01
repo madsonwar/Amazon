@@ -1,9 +1,15 @@
 #ifndef SITEDEVENDAS_H
 #define SITEDEVENDAS_H
 #include <string>
+#include <ostream>
+
+using std::ostream;
 using std::string;
 class SiteDeVendas
+
 {
+    friend ostream &operator<<( ostream &,const SiteDeVendas &);
+    
 public:
     SiteDeVendas();
     SiteDeVendas( const string &, const string &);
@@ -14,6 +20,7 @@ public:
     string getEndereco();
     void setNome( string );
     void setEndereco( string );
+    bool operator==( const SiteDeVendas &) const;
     
 private:
     string nome;
