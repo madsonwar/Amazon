@@ -94,9 +94,9 @@
     <File Name="main.cpp"/>
     <File Name="SiteDeVendas.h"/>
     <File Name="SiteDeVendas.cpp"/>
-    <File Name="Amazon.hpp"/>
+    <File Name="Amazon.h"/>
     <File Name="Amazon.cpp"/>
-    <File Name="Data.hpp"/>
+    <File Name="Data.h"/>
     <File Name="Data.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>
