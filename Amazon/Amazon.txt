@@ -1,1 +1,1 @@
-./Debug/main.cpp.o ./Debug/SiteDeVendas.cpp.o ./Debug/Amazon.cpp.o ./Debug/Data.cpp.o   
+./Debug/main.cpp.o ./Debug/SiteDeVendas.cpp.o ./Debug/Amazon.cpp.o ./Debug/Data.cpp.o ./Debug/Site.cpp.o ./Debug/RedeSocial.cpp.o   

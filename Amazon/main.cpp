@@ -7,13 +7,13 @@ using std::cout;
 using std::string;
 int main(int argc, char **argv)
 {
-	SiteDeVendas meuSite("amazon", "www.amazon.com", 5, 9, 1999);
+	//SiteDeVendas meuSite("amazon", "www.amazon.com", 5, 9, 1999);
     
-    meuSite.printfDataAtual();
+    /*meuSite.printfDataAtual();
     
     meuSite.initListaDeProdutos();
     meuSite.mostraListaDeProdutos();
-    
+    */
     
     
 }

@@ -98,5 +98,11 @@
     <File Name="Amazon.cpp"/>
     <File Name="Data.h"/>
     <File Name="Data.cpp"/>
+    <File Name="Site.hpp"/>
+    <File Name="Site.cpp"/>
+    <File Name="RedeSocial.hpp"/>
+    <File Name="RedeSocial.cpp"/>
+    <File Name="Sites.hpp"/>
+    <File Name="Sites.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>
